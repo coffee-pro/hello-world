@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>Langagers</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- style css-->
+     <link rel="stylesheet" href="style.css" />
+     <!-- angularJS		-->
+     <script src="angular.min.js"></script>
+     <script src="JsonFreemwork.js"></script>
+     <script src="W3.js"></script>
+</head>
+<body  ng-app="todoApp">
+<a href="index.html">home</a>
+<div class="loading">
+    <div class="obj"></div><div class="obj"></div><div class="obj"></div><div class="obj"></div><div class="obj"></div><div class="obj"></div><div class="obj"></div><div class="obj"></div>
+</div>
+<div class="loading2">
+    <div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div><div class="obj2"></div>
+</div>
+<div class="loading3">
+    <div class="obj3"></div><div class="obj3"></div><div class="obj3"></div><div class="obj3"></div><div class="obj3"></div><div class="obj3"></div><div class="obj3"></div><div class="obj3"></div>   
+</div>
+<hr>
+<br>
+<div class="container">
+    <div class="button">
+        <div class="front">
+            Languages
+        </div>
+        <div class="right">
+            <a><i class="fa fa-twitter" aria-hidden="true"><div class="testbtn" onclick="openCity(event,'Programminglangages')"><img src="IMG_20200210_203837.jpg" width="50px" height="45px" /></div></i></a>
+            <a><i class="fa fa-facebook" aria-hidden="true"><div class="testbtn" onclick="openCity(event,'Descriptivelanguages')"><img src="IMG_20200210_203751.jpg" width="50px" height="45px" /></div></i></a>
+            <a><i class="fa fa-pinterest-p" aria-hidden="true"><div class="testbtn" onclick="openCity(event,'Querylanguages')"><img src="IMG_20200210_204510.jpg" width="50px" height="45px" /></div></i></a>
+        </div>
+    </div>
+</div>
+<br><br>
+<div class="container">
+    <div class="button">
+        <div class="front">
+            Framework
+        </div>
+        <div class="right">
+            <a><i class="fa fa-pinterest-p" aria-hidden="true"><div class="testbtn" onclick="openCity(event,'Framework')"><img src="IMG_20200210_204606.jpg" width="50px" height="45px" /></div></i></a>
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<!--langages Programming-->
+<div id="Programminglangages" class="city">
+     <a onclick="document.getElementById('pl').style.display='block'"><h2>Programming Languages</h2></a>
+     <div id="pl" class="popup">
+          <div class="popup_content">
+               <h1>Programming Languages</h1>
+               <p>
+                    <br>Disktop Application
+                    <br>Mobile Application
+                    <br>Web Application
+                    <br>Game
+               </p>
+               <button onclick="document.getElementById('pl').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('py').style.display='block'">
+          <div class="popup_content">
+               <h1>Phython</h1>
+          </div>
+     </a>
+     <div id="py" class="popup">
+          <div class="popup_content">
+               <h1>Phython</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('py').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('java').style.display='block'">
+          <div class="popup_content">
+               <h1>JAVA</h1>
+          </div>
+     </a>
+     <div id="java" class="popup">
+          <div class="popup_content">
+               <h1>JAVA</h1>
+               <p>
+                    <br>JDK
+                    <br>JRE
+                    <br>JVM
+                    <br>Java FX
+                    <br>Spring Struts Hibernate
+               </p>
+               <button onclick="document.getElementById('java').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('js').style.display='block'">
+          <div class="popup_content">
+               <h1>JavaScript</h1>
+          </div>
+     </a>
+     <div id="js" class="popup">
+          <div class="popup_content">
+               <h1>JavaScript</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('js').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('c#').style.display='block'">
+          <div class="popup_content">
+               <h1>C#</h1>
+          </div>
+     </a>
+     <div id="c#" class="popup">
+          <div class="popup_content">
+               <h1>C#</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('c#').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('asp').style.display='block'">
+          <div class="popup_content">
+               <h1>ASP.NET</h1>
+          </div>
+     </a>
+     <div id="asp" class="popup">
+          <div class="popup_content">
+               <h1>ASP.NET</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('asp').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('c').style.display='block'">
+          <div class="popup_content">
+               <h1>C</h1>
+          </div>
+     </a>
+     <div id="c" class="popup">
+          <div class="popup_content">
+               <h1>C</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('c').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('cpp').style.display='block'">
+          <div class="popup_content">
+               <h1>C++</h1>
+          </div>
+     </a>
+     <div id="cpp" class="popup">
+          <div class="popup_content">
+               <h1>C++</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('cpp').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('vb').style.display='block'">
+          <div class="popup_content">
+               <h1>Visual Basic</h1>
+          </div>
+     </a>
+     <div id="vb" class="popup">
+          <div class="popup_content">
+               <h1>Visual Basic</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('vb').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('sw').style.display='block'">
+          <div class="popup_content">
+               <h1>Swift</h1>
+          </div>
+     </a>
+     <div id="sw" class="popup">
+          <div class="popup_content">
+               <h1>Swift</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('sw').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('php?').style.display='block'">
+          <div class="popup_content">
+               <h1>PHP</h1>
+          </div>
+     </a>
+     <div id="php?" class="popup">
+          <div class="popup_content">
+               <h1>PHP</h1>
+               <p>
+                    PHP:Hypertext Preprocessor
+               </p>
+               <button onclick="document.getElementById('php?').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('rb').style.display='block'">
+          <div class="popup_content">
+               <h1>ROBY</h1>
+          </div>
+     </a>
+     <div id="rb" class="popup">
+          <div class="popup_content">
+               <h1>ROBY</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('rb').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('rng').style.display='block'">
+          <div class="popup_content">
+               <h1>Ring</h1>
+          </div>
+     </a>
+     <div id="rng" class="popup">
+          <div class="popup_content">
+               <h1>Ring</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('rng').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('r').style.display='block'">
+          <div class="popup_content">
+               <h1>R</h1>
+          </div>
+     </a>
+     <div id="r" class="popup">
+          <div class="popup_content">
+               <h1>R</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('r').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('glg').style.display='block'">
+          <div class="popup_content">
+               <h1>Golang</h1>
+          </div>
+     </a>
+     <div id="glg" class="popup">
+          <div class="popup_content">
+               <h1>Golang</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('glg').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="pagination" onclick="document.getElementById('psq').style.display='block'">
+          <div class="popup_content">
+               <h1>Pasqual</h1>
+          </div>
+     </a>
+     <div id="psq" class="popup">
+          <div class="popup_content">
+               <h1>Pasqual</h1>
+               <p>
+               </p>
+               <button onclick="document.getElementById('psq').style.display='none'" class="popup_button">Ok</button>
+          </div>
+     </div>
+     <a class="previous1" onclick="myShow.previous()">
+          <
+     </a>
+     <a class="next1" onclick="myShow.next()">
+         >
+     </a>
+</div>
+<!--Descriptive languages-->
+<div id="Descriptivelanguages" class="city">
+     <h1>Descriptive Languages</h1>
+     <div class="popup_content">
+          <h1>SGML</h1>
+          <p>Standard Generalized Markup Language</p>
+     </div>
+     <div class="popup_content">
+          <h1>XML</h1>
+          <p>Extensible Markup Language</p>
+     </div>
+     <div class="popup_content">
+          <h1>HTML</h1>
+          <p>Hyper		Text Markup Language</p>
+          <a onclick="document.getElementById('htmltags').style.display='block'">
+               HTML Tags
+          </a>
+																<div id="htmltags" class="popup">
+     								<div class="popup_content">
+          <h1>HTML Tags</h1>
+          <img class="pagination2" src="html/Screenshot_20200210_215314_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215329_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215341_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215358_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215420_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215437_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215451_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215502_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215515_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215534_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_215849_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220051_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220110_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220130_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220148_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220216_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220233_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220327_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220402_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220411_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220420_com.android.chrome.jpg" width="100%" />
+          <img class="pagination2" src="html/Screenshot_20200210_220643_com.android.chrome.jpg" width="100%" />
+          
+     								     <button onclick="document.getElementById('htmltags').style.display='none'" class="popup_button">
+     								          Ok
+     								     </button>
+     								     <a class="next" onclick="myShow2.previous()">
+     								          >
+     								     </a>
+     								     <a class="previous" onclick="myShow2.next()">
+     								          <
+     								     </a>
+     
+																     
+																</div>
+																</div>
+     </div>
+     <div class="popup_content">
+          <h1>XHTML</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>XPATH</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>SCHEMA</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>XSL</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>CSS</h1>
+          <p>Cascading StyleSheet</p>
+     </div>
+     <div class="popup_content">
+          <h1>SVG</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>CANVAS</h1>
+          <p></p>
+     </div>
+          
+     <a class="previous1" onclick="myShow.previous()">
+          <
+     </a>
+     <a class="next1" onclick="myShow.next()">
+         >
+     </a>     
+</div>
+<!--Descriptive languages-->
+<div id="Querylanguages" class="city">
+     <h1>Query languages</h1>
+     <div class="popup_content">
+          <h1>SQL</h1>
+          <p>Structure Query Language</p>
+     </div>
+     <div class="popup_content">
+          <h1>MySQL</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>WampServer</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>APACHE</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>SQL server</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>SQLite</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>Postgre SQL</h1>
+          <p></p>
+     </div>
+     <div class="popup_content">
+          <h1>XQUERY</h1>
+          <p></p>
+     </div>
+</div>
+<!--Framework-->
+<div id="Framework" class="city">
+     <h1>Framework</h1>
+     <!--JavaScript-->
+     <div class="btn">
+          <a onclick="document.getElementById('JavaScript').style.display='block'">
+               JavaScript
+          </a>
+     </div>
+     <div id="JavaScript" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('JavaScript').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Framework JavaScript
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <div ng-controller="TodoListController as todoList">
+                         <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+                         [ <a href="" ng-click="todoList.archive()">archive</a> ]
+                         <ul class="unstyled">
+                              <li ng-repeat="todo in todoList.todos">
+                                   <label class="checkbox">
+                                        <input type="checkbox" ng-model="todo.done">
+                                        <span class="done-{{todo.done}}">{{todo.text}}</span>
+                                   </label>
+                              </li>
+                         </ul>
+                         <form ng-submit="todoList.addTodo()">
+                              <input type="text" ng-model="todoList.todoText" size="30"	placeholder="add new todo here">
+                              <input class="btn-primary" type="submit" value="add">
+                         </form>
+                    </div>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+     <!--CSS-->
+     <div class="btn">
+          <a onclick="document.getElementById('css').style.display='block'">
+               CSS
+          </a>
+     </div>
+     <div id="css" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('css').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Framework CSS
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <ul>
+                         <li>Bootsrap</li>
+                         <li>less CSS Preprocessor</li>
+                         <li>Sass CSS Preprocessor</li>
+                    </ul>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+     <!--PHP-->
+     <div class="btn">
+          <a onclick="document.getElementById('php').style.display='block'">
+               PHP
+          </a>
+     </div>
+     <div id="php" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('php').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Framework PHP
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <ul>
+                         <li>Laravel</li>
+                         <li>CakePHP</li>
+                         <li>Symfony</li>
+                         <li>Phalcon</li>
+                    </ul>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+     <!--Python-->
+     <div class="btn">
+          <a onclick="document.getElementById('phython').style.display='block'">
+               Phython
+          </a>
+     </div>
+     <div id="phython" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('phython').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Framework Phython
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <ul>
+                         <li>Django</li>
+                         <li>Flask</li>
+                         <li>Jedi</li>
+                         <li>Pyramid</li>
+                    </ul>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+     <!--Kotlin-->
+     <div class="btn">
+          <a onclick="document.getElementById('kotlin').style.display='block'">
+               Kotlin
+          </a>
+     </div>
+     <div id="kotlin" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('kotlin').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Framework Kotlin
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <ul>
+                         <li>Ktor</li>
+                         <li>Vertx</li>
+                         <li>Spring</li>
+                    </ul>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+     <!--Swift-->
+     <div class="btn">
+          <a onclick="document.getElementById('swift').style.display='block'">
+               Swift
+          </a>
+     </div>
+     <div id="swift" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('swift').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Framework Swift
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <ul>
+                         <li>Cocoa</li>
+                         <li>Cloudkit</li>
+                    </ul>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+     <!--Golang-->
+     <div class="btn">
+          <a onclick="document.getElementById('golang').style.display='block'">
+               Golang
+          </a>
+     </div>
+     <div id="golang" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('golang').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Framework Golang
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <ul>
+                         <li>Rebel</li>
+                         <li>Beego</li>
+                    </ul>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+     <!--Definitions-->
+     <div class="btn">
+          <a onclick="document.getElementById('definitions').style.display='block'">
+               Definitions
+          </a>
+     </div>
+     <div id="definitions" class="jam-modal">
+          <div class="jam-modal-content">
+               <header class="jam-container jam-theme">
+                    <span onclick="document.getElementById('definitions').style.display='none'"
+                         class="jam-display-topright">
+                         ×
+                    </span>
+                    <h2 class="jam-padding">
+                         Definitions
+                    </h2>
+               </header>
+               <div class="jam-padding">
+                    <ul>
+                         <li>
+                              <h3>MVC :<small> Model View Controller</small></h3>
+                         </li>
+                         <li>
+                              <h3>CMS :<small> Content Management System</small></h3>
+                         </li>
+                         <li>
+                              <h3>SEO :<small> Search Engine Optimization</small></h3>
+                         </li>
+                         <li>
+                               <h3>FTP:<small> file transfer protocol</small></h3>
+                         </li>
+                         <li>
+                              <h3>CDN :<small></small></h3>
+                         </li>
+                         <li>
+                              <h3>PDO :<small></small></h3>
+                         </li>
+                         <li>
+                              <h3>DTD :<small></small></h3>
+                         </li>
+                         <li>
+                              <h3>Zamarin Forms :<small></small></h3>
+                         </li>
+                    </ul>
+               </div>
+               <footer class="jam-container jam-theme jam-padding">
+               </footer>
+          </div>
+     </div>
+</div>
+<!--sledeShow-->
+<div><hr>
+<IMG class="nature" width="300px" height="200px" src="slid/1_aalTd6nKuVR31c3-bEED8g.jpeg" />
+<img class="nature" width="300px" height="200px" src="slid/Code-Structure-1.gif" />
+<img class="nature" width="300px" height="200px" src="slid/images.jpeg" />     
+<img class="nature" width="300px" height="200px" src="slid/images.png" />     
+<img class="nature" width="300px" height="200px" src="slid/JavaScript-Framework-2.jpg" />
+<img class="nature" width="300px" height="200px" src="slid/programing-languages.png" />
+<img class="nature" width="300px" height="200px" src="slid/tools-1.png" />     
+<img class="nature" width="300px" height="200px" src="slid/unnamed.png" />
+<img class="nature" width="300px" height="200px" src="slid/web-technology-png-2.png" />     
+</div><hr>
+     
+
+<!--modal-->
+<a onclick="document.getElementById('test').style.display='block'">
+     Test
+</a>
+<div id="test" class="jam-modal">
+     <div class="jam-modal-content">
+          <header class="jam-container jam-theme">
+               <span onclick="document.getElementById('test').style.display='none'"
+                    class="jam-display-topright">
+                    ×
+               </span>
+               <h2 class="jam-padding">you a modal</h2>
+          </header>
+          <div class="jam-padding">
+               
+          </div>
+          <footer class="jam-container jam-theme jam-padding">
+               footer
+          </footer>
+     </div>
+</div>
+<!--modal test2-->
+<a onclick="document.getElementById('test2').style.display='block'">
+     Test2
+</a>
+<div id="test2" class="popup">
+    <div class="popup_content">
+        <h1></h1>
+        <b>
+        </b>
+       <br>
+        <button onclick="document.getElementById('test2').style.display='none'" class="popup_button">Ok</button>
+    </div>
+</div>     
+     
+<script>
+							w3.slideshow(".nature", 2000);
+</script>
+<script>
+     myShow = w3.slideshow(".pagination", 0);
+</script>
+<script>
+     myShow2 = w3.slideshow(".pagination2", 0);
+</script>
+<!-- script -->
+<script src="script.js"></script>
+</body>
+</html> 
+
