@@ -4,8 +4,8 @@
 
 .loading{
   position: absolute;
-  top: 5px;
-  left: 20px;
+  top: 10px;
+  left: 50px;
   transform: translate(-50%, -50%);
   height: 40px;
   display: flex;
