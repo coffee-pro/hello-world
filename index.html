@@ -655,7 +655,7 @@
                 <li><h3>SEO :<small> Search Engine Optimization</small></h3></li>
                 <li><h3>FTP:<small> File Transfer Protocol</small></h3></li>
                 <li><h3>CDN :<small> Content Delivery Network</small></h3></li>
-                <li><h3>SVN :<small> Sub Version</small></h3></li>
+                <li><h3><a href="#" data-toggle="tooltip" title="Sub Version">SVN</a></h3></li>
                 <li><h3>DTD :<small></small></h3></li>
                 <li><h3>Zamarin Forms :<small></small></h3></li>
               </ul>
@@ -709,6 +709,12 @@ Exemple
   </div>
 </div>
       
+<!--Tooltip-->
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 <!--pagination home page-->
 <script>
 function openJam(evt, jamName) {
