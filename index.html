@@ -8,38 +8,75 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <script src="w3.js"></script>
 </head>
 <body>
 <!--navbar-->
-<div class="navbar bg-dark">
-  <ul class="nav nav-pills" role="tablist">
-<li class="nav-item"><img src="logo.png" width="50px" height="32px"></li>
-      <li class="nav-item"><button class="btn		btn-success" onclick="openJam(event,'home')">HM</button></li>
-      <li class="nav-item"><button class="btn		btn-primary" onclick="openJam(event,'Programminglangages')">PL</button></li>
-      <li class="nav-item"><button class="btn		btn-info" onclick="openJam(event,'Descriptivelanguages')">DL</button></li>
-      <li class="nav-item"><button class="btn		btn-warning" onclick="openJam(event,'Querylanguages')">QL</button></li>
-      <li class="nav-item"><button class="btn		btn-danger" onclick="openJam(event,'Framework')">FW</button></li>
-      <li class="nav-item"><button class="btn		btn-success" onclick="openJam(event,'exemple')">EX</button></li>
-  </ul>
-</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="index.html"><img src="logo.png" width="60px" height="40px"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <hr>
+      <li class="nav-item"><a class="nav-link btnlink" onclick="openJam(event,'home')">home</a></li>
+      <!--programming langages-->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Languages
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item btnlink" onclick="openJam(event,'html')">HTML</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'css')">CSS</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'javascript')">JavaScript</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'java')">JAVA</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'python')">Python</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'php')">PHP</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'c#')">C#</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'c')">C</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'cpp')">C++</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'kotlin')">kotlin</a>
+          <a class="dropdown-item btnlink" onclick="openJam(event,'vb')">Visual Basic</a>
+        </div>
+      </li>
+      <li class="nav-item"><a class="nav-link btnlink" onclick="openJam(event, 'framework')">Framework</a></li>
+      <li class="nav-item"><a class="nav-link btnlink" onclick="openJam(event,'definition')">Définition & Tools</a></li>
+      <hr>
+    </ul>
+  </div>
+</nav>
 <!--home page-->
 <div id="home" class="jam">
   <div class="jumbotron text-center">
-    <img class="rounded-circle" src="IMG_20200130_144406.jpg" width="85px" height="80px" />
-    <div class="spinner-border text-primary"><center><h5>J</h5></center></div>
-    <div class="spinner-border text-success"><center><h5>A</h5></center></div>
-    <div class="spinner-border text-info"><center><h5>M</h5></center></div>
-    <div class="spinner-border text-warning"><center><h5>A</h5></center></div>
-    <div class="spinner-border text-danger"><center><h5>L</h5></center></div>
-    <div class="spinner-border text-primary"><center><h5>E</h5></center></div>
-    <div class="spinner-border text-success"><center><h5>L</h5></center></div>
-    <div class="spinner-border text-info"><center><h5>K</h5></center></div>
-    <div class="spinner-border text-warning"><center><h5>H</h5></center></div>
-    <div class="spinner-border text-danger"><center><h5>D</h5></center></div>
-    <div class="spinner-border text-primary"><center><h5>A</h5></center></div>
-    <div class="spinner-border text-success"><center><h5>D</h5></center></div>
-    <div class="spinner-border text-info"><center><h5>I</h5></center></div>
+    <div class="spinner-border text-primary"><center><h4>J</h4></center></div>
+    <div class="spinner-border text-success"><center><h4>A</h4></center></div>
+    <div class="spinner-border text-info"><center><h4>M</h4></center></div>
+    <div class="spinner-border text-warning"><center><h4>A</h4></center></div>
+    <div class="spinner-border text-danger"><center><h4>L</h4></center></div>
+    <br>
+    <div class="spinner-border text-primary"><center><h4>E</h4></center></div>
+    <div class="spinner-border text-success"><center><h4>L</h4></center></div>
+    <div class="spinner-border text-info"><center><h4>K</h4></center></div>
+    <div class="spinner-border text-warning"><center><h4>H</h4></center></div>
+    <div class="spinner-border text-danger"><center><h4>D</h4></center></div>
+    <div class="spinner-border text-primary"><center><h4>A</h4></center></div>
+    <div class="spinner-border text-success"><center><h4>D</h4></center></div>
+    <div class="spinner-border text-info"><center><h4>I</h4></center></div>
+    <hr>
+    <div id="demo2" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo2" data-slide-to="0" class="active"></li>
+        <li data-target="#demo2" data-slide-to="1"></li>
+        <li data-target="#demo2" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active"><h4>Programming langages<br>Descriptive langages<br>Query langages<br>Framework</h4></div>
+        <div class="carousel-item"><h4>Disktop Application<br>Mobile Application<br>Web Application<br>Game</h4></div>
+        <div class="carousel-item"><h4>Front-end<br>Developer<br>back-end<br>developers</h4></div>
+      </div>
+      <a class="carousel-control-prev" href="#demo2" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+      <a class="carousel-control-next" href="#demo2" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+    </div>
   </div>
   <div class="container" style="margin-top:30px">
     <div class="row">
@@ -67,521 +104,146 @@
         <h3>Professional websites</h3>
         <ul class="nav nav-pills flex-column">
           <li class="nav-item"><a class="nav-link active" href="https://github.com/jamalelkhdadi">Github</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">6</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">6</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">u</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#">8</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
+          <li class="nav-item"><a class="nav-link" href="https://gitlab.com/jamalelkhdadi1/web">Gitlab</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://bitbucket.org/dashboard/projects">Bitbucket</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://www.behance.net/jamalelkhdadi1">Behance</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://codepen.io/jamalelkhdadi">Codepen</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://stackoverflow.com/users/12586453/jamal-elkhdadi">Stackoverflow</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://classroom.udacity.com/me">Udacity</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://dev.to/jamalelkhdadi/buton-181b">Dev.to</a></li>
           <li class="nav-item"><a class="nav-link" href="#"></a></li>
           <li class="nav-item"><a class="nav-link" href="#"></a></li>
           <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"></a></li>
+          
         </ul>
         <hr class="d-sm-none">
       </div>
       <div class="col-sm-6">
-        <h2>hasouna academy</h2>
-        <h5>web</h5>
-        <div class="">
-          
-طريقي لاحتراف تصميم الويب بالترتيب بخطوات من البداية الي العمل في الشركات
-
-تطوير موقع الويب يتكون من قسمين، وهم ( فرونت اند ) Front-End للتصميم والحركات والواجهات & ( باك اند ) Back-End للبرمجة وقواعد البيانات والعمليات
- 1- ( فرونت اند ) Front-End
-  • تعلم HTML كبداية:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfnXKjZ9UcT5BVt9x19BlItX
-
-  • تعلم HTML بتفصيل أكثر:
-https://www.youtube.com/watch?v=KRiq7Eqfe-Q&list=PLHIfW1KZRIfnR2RV2lmqDHx7oHAmlTgJQ
-
-  • تعلم CSS كبداية:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIflO6xnz4jpmzzSuo5B63aJf
-
-  • تعلم CSS بتفصيل أكثر:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfkJzvWATr3oQ8mrVrTUqZ7K
-
-  • كن مميز وتعلم SVG جرافيك:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfneZzVSo84DuwnyP9ieYt8K
-
-  • تحكم في برمجة الويب بقوة مع جافا سكريبت:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfmiYYwt29BG7N9zzsd-jLRQ
-
-  • وفر الوقت وافعل الكثير بكتابة قليلة مع جى كويري:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfll3ObMFi02Ry7oRU3MJVRG
-
-  • عمل مواقع انترنت احترافية بسهولة مع بوتستراب:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfmzBcYnuLNrmdLxYCDzJgQi
-
- 2- ( باك اند ) Back-End
- - اختيار لغة PHP وقواعد البيانات MySQL للتطوير
-  • قواعد البيانات ماي سكول:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIflO4GPp9vMtUgry-xAQKl7i
-
-  • لغة PHP بي اتش بي:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfmPDQahhTDdd1DJ4PwQl3pC
- - اختيار لغة C# وقواعد البيانات SQL-Server للتطوير - اختر أي نوع قواعد بيانات
-  • قواعد البيانات:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfnKHFH1uUwdpeW8h-A8lAI_
-
-  • سي شارب:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfmIhzWCyXnYlxz8ALlfPRAn
-
-  • السي شارب مع قواعد البيانات:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIflAus00vgdVEzLUBCx8ooH_
-
-  • سي شارب مع ASP .NET للويب:
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfmi8jwSbqiQuVfxeXIBk-bW
-
-  • تعليم تنفيذي مرئي للخدمات الكاملة ( بدون صوت ):
-https://www.youtube.com/playlist?list=PLHIfW1KZRIfn6kI3NyvzTDm-wdw9EX7D6
-
- - يمكن اختيار المسارات ( جافا، فيجوال بيسك، بايثون، رينج ) وغيرهم الكثير والكثير بفضل الله، موجودين في اكاديمية حسونة
- - العمل في الشركات ( تخصص Front-End ) أو ( تخصص Back-End ) أو الأثنين معاً، حسب الشركة
-
+        <div class="container p-3 my-3 bg-primary text-white">
+          <h1>Programming Languages</h1>
+          <table class="table">
+            <thead>
+              <tr>
+                <td><h4>Langages</h4></td>
+                <td><h4>Definition</h4></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Python</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Java</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>PHP</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>C#</td>
+                <td>asp.net</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>C++</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Kotlin</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Visual Basic</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ruby</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Swift</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Ring</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Pasqual</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>R</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Golang</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <br>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg">
-          Fake Image
+        <div class="container p-3 my-3 bg-primary text-white">
+          <h1>Descriptive languages</h1>
+          <table class="table">
+            <tr>
+              <td>CSS</td>
+              <td><p>Cascading StyleSheet</p></td>
+            </tr>
+            <tr>
+              <td>SGML</td>
+              <td><p>Standard Generalized Markup Language</p></td>
+            </tr>
+            <tr>
+              <td>HTML</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>XML</td>
+              <td>Extensible Markup Language</td>
+            </tr>
+            <tr>
+              <td>XHTML</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>XPATH</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>XSL</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SCHÉMA</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>CANVAS</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>SVG</td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>JSON</td>
+              <td>Javascript Object Notation<br>Format for sharing data between server and client</td>
+            </tr>
+          </table>
         </div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-        <h2>TITLE HEADING</h2>
-        <h5>Title description, Sep 2, 2017</h5>
-        <div class="fakeimg">
-          Fake Image
-        </div>
-        <p>Some text..</p>
-        <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-      </div>
-    </div>
-  </div>
-  <div class="jumbotron text-center" style="margin-bottom:0">
-    <p>Footer</p>
-    <code>jamalelkhdadi</code>
-    <kbd>github</kbd>
-  </div>
-</div>
-<!--programing languages-->
-<div id="Programminglangages" class="jam">
-  <div class="jumbotron text-center">
-    <div class="dropdown">
-      <h1>Programming Languages
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Disktop Application</a>
-          <a class="dropdown-item" href="#">Mobile Application</a>
-          <a class="dropdown-item" href="#">Web Application</a>
-          <a class="dropdown-item" href="#">Game</a>
-        </div>
-      </h1>
-    </div>
-  </div>
-  <div class="container" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-6">
-        <ul>
-          <li>Phython</li>
-          <li>Java
-            <div id="java">
-              <br>JDK
-              <br>JRE
-              <br>JVM
-              <br>Java FX
-              <br>Spring Struts Hibernate
-            </div>
-          </li>
-          <li>JavaScript</li>
-          <li>C#</li>
-          <li>Asp.net</li>
-          <li>C</li>
-          <li>C++</li>
-          <li>PHP<p>PHP:Hypertext Preprocessor</p></li>
-        </ul>
-      </div>
-      <div class="col-sm-6">
-        <ul>
-          <li>Visual Basic</li>
-          <li>Swift</li>
-          <li>Roby</li>
-          <li>Ring</li>
-          <li>R</li>
-          <li>Golang</li>
-          <li>Pasqual</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<!--Descriptive languages-->
-<div id="Descriptivelanguages" class="jam">
-  <div class="jumbotron text-center">
-    <div class="dropdown">
-      <h1>Descriptive Languages
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
-        <div class="dropdown-menu">
-          
-        </div>
-      </h1>
-    </div>
-  </div>
-  <div class="container" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-6">
-        <ul>
-          <li>
-            <h1>SGML</h1>
-            <p>Standard Generalized Markup Language</p>
-          </li>
-          <li>
-            <h1>XML</h1>
-            <p>Extensible Markup Language</p>
-          </li>
-          <li>
-            <h1>HTML</h1>
-            <p>Hyper		Text Markup Language</p>
-            <ol>
-              <li>HTML Tags <button class="btn btn-success" data-toggle="modal" data-target="#htmltags"></button></li>
-              <li>HTML Élément <button class="btn btn-success" data-toggle="modal" data-target="#htmlelement"></button></li>
-              <li>HTML Attributs <button class="btn btn-success" data-toggle="modal" data-target="#htmlatributs"></button></li>
-              <li>HTML Symbol <button class="btn btn-success" data-toggle="modal" data-target="#htmlsymbol"></button></li>
-            </ol>
-            <!--tags-->
-            <div class="modal" id="htmltags">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Basic tags HTML HTML5</h4>
-                  </div>
-                  <div class="modal-body">
-                    <table class="table table-striped">
-                      <tr><th style="width:25%">Tags</th><th>Description</th></tr>
-                      <tr><td>&lt;!-- --&gt;</td><td>Defines a comment</td></tr>
-                      <tr><td>&lt;!DOCTYPE&gt;&nbsp;</td><td>Defines the document type</td></tr>
-                      <tr><td>&lt;a&gt;</td><td>Defines a hyperlink</td></tr>
-                      <tr><td>&lt;abbr&gt;</td><td>Defines an abbreviation or an acronym</td></tr>
-                      <tr><td>&lt;acronym&gt;</td><td>Not supported in HTML5. Use &lt;abbr&gt; instead. Defines an acronym</td></tr>
-                      <tr><td>&lt;address&gt;</td><td>Defines contact information for the author/owner of a document</td></tr>
-                      <tr><td>&lt;applet&gt;</td><td>Not supported in HTML5. Use &lt;embed&gt; or &lt;object&gt; instead. Defines an embedded applet</td></tr>
-                      <tr><td>&lt;area&gt;</td><td>Defines an area inside an image-map</td></tr>
-                      <tr><td>&lt;article&gt;</td><td>Defines an article</td></tr>
-                      <tr><td>&lt;aside&gt;</td><td>Defines content aside from the page content</td></tr>
-                      <tr><td>&lt;audio&gt;</td><td>Defines sound content</td></tr>
-                      <tr><td>&lt;b&gt;</td><td>Defines bold text</td></tr>
-                      <tr><td>&lt;base&gt;</td><td>Specifies the base URL/target for all relative URLs in a document</td></tr>
-                      <tr><td>&lt;basefont&gt;</td><td>Not supported in HTML5. Use CSS instead. Specifies a default color, size, and font for all text in a document</td></tr>
-                      <tr><td>&lt;bdi&gt;</td><td>Isolates a part of text that might be formatted in a different direction from other text outside it</td></tr>
-                      <tr><td>&lt;bdo&gt;</td><td>Overrides the current text direction</td></tr>
-                      <tr><td>&lt;big&gt;</td><td>Not supported in HTML5. Use CSS instead. Defines big text</td></tr>
-                      <tr><td>&lt;blockquote&gt;</td><td>Defines a section that is quoted from another source</td></tr>
-                      <tr><td>&lt;body&gt;</td><td>Defines the document's body</td></tr>
-                      <tr><td>&lt;br&gt;</td><td>Defines a single line break</td></tr>
-                      <tr><td>&lt;button&gt;</td><td>Defines a clickable button</td></tr>
-                      <tr><td>&lt;canvas&gt;</td><td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td></tr>
-                      <tr><td>&lt;caption&gt;</td><td>Defines a table caption</td></tr>
-                      <tr><td>&lt;center&gt;</td><td>Not supported in HTML5. Use CSS instead. Defines centered text</td></tr>
-                      <tr><td>&lt;cite&gt;</td><td>Defines the title of a work</td></tr>
-                      <tr><td>&lt;code&gt;</td><td>Defines a piece of computer code</td></tr>
-                      <tr><td>&lt;col&gt;</td><td>Specifies column properties for each column within a &lt;colgroup&gt; element&nbsp;</td></tr>
-                      <tr><td>&lt;colgroup&gt;</td><td>Specifies a group of one or more columns in a table for formatting</td></tr>
-                      <tr><td>&lt;data&gt;</td><td>Links the given content with a machine-readable translation</td></tr>
-                      <tr><td>&lt;datalist&gt;</td><td>Specifies a list of pre-defined options for input controls</td></tr>
-                      <tr><td>&lt;dd&gt;</td><td>Defines a description/value of a term in a description list</td></tr>
-                      <tr><td>&lt;del&gt;</td><td>Defines text that has been deleted from a document</td></tr>
-                      <tr><td>&lt;details&gt;</td><td>Defines additional details that the user can view or hide</td></tr>
-                      <tr><td>&lt;dfn&gt;</td><td>Represents the defining instance of a term</td></tr>
-                      <tr><td>&lt;dialog&gt;</td><td>Defines a dialog box or window</td></tr>
-                      <tr><td>&lt;dir&gt;</td><td>Not supported in HTML5. Use &lt;ul&gt; instead. Defines a directory list</td></tr>
-                      <tr><td>&lt;div&gt;</td><td>Defines a section in a document</td></tr>
-                      <tr><td>&lt;dl&gt;</td><td>Defines a description list</td></tr>
-                      <tr><td>&lt;dt&gt;</td><td>Defines a term/name in a description list</td></tr>
-                      <tr><td>&lt;em&gt;</td><td>Defines emphasized text&nbsp;</td></tr>
-                      <tr><td>&lt;embed&gt;</td><td>Defines a container for an external (non-HTML) application</td></tr>
-                      <tr><td>&lt;fieldset&gt;</td><td>Groups related elements in a form</td></tr>
-                      <tr><td>&lt;figcaption&gt;</td><td>Defines a caption for a &lt;figure&gt; element</td></tr>
-                      <tr><td>&lt;figure&gt;</td><td>Specifies self-contained content</td></tr>
-                      <tr><td>&lt;font&gt;</td><td>Not supported in HTML5. Use CSS instead. Defines font, color, and size for text</td></tr>
-                      <tr><td>&lt;footer&gt;</td><td>Defines a footer for a document or section</td></tr>
-                      <tr><td>&lt;form&gt;</td><td>Defines an HTML form for user input</td></tr>
-                      <tr><td>&lt;frame&gt;</td><td>Not supported in HTML5. Defines a window (a frame) in a frameset</td></tr>
-                      <tr><td>&lt;frameset&gt;</td><td>Not supported in HTML5. Defines a set of frames</td></tr>
-                      <tr><td>&lt;h1&gt; to &lt;h6&gt;</td><td> Defines HTML headings</td></tr>
-                      <tr><td>&lt;head&gt;</td><td>Defines information about the document</td></tr>
-                      <tr><td>&lt;header&gt;</td><td>Defines a header for a document or section</td></tr>
-                      <tr><td>&lt;hr&gt;</td><td> Defines a thematic change in the content</td></tr>
-                      <tr><td>&lt;html&gt;</td><td>Defines the root of an HTML document</td></tr>
-                      <tr><td>&lt;i&gt;</td><td>Defines a part of text in an alternate voice or mood</td></tr>
-                      <tr><td>&lt;iframe&gt;</td><td>Defines an inline frame</td></tr>
-                      <tr><td>&lt;img&gt;</td><td>Defines an image</td></tr>
-                      <tr><td>&lt;input&gt;</td><td>Defines an input control</td></tr>
-                      <tr><td>&lt;ins&gt;</td><td>Defines a text that has been inserted into a document</td></tr>
-                      <tr><td>&lt;kbd&gt;</td><td>Defines keyboard input</td></tr>
-                      <tr><td>&lt;label&gt;</td><td>Defines a label&nbsp;for an &lt;input&gt; element</td></tr>
-                      <tr><td>&lt;legend&gt;</td><td>Defines a caption for a &lt;fieldset&gt; element</td></tr>
-                      <tr><td>&lt;li&gt;</td><td>Defines a list item</td></tr>
-                      <tr><td>&lt;link&gt;</td><td>Defines the relationship between a document and an external resource (most used to link to style sheets)</td></tr>
-                      <tr><td>&lt;main&gt;</td><td>Specifies the main content of a document</td></tr>
-                      <tr><td>&lt;map&gt;</td><td>Defines a client-side image-map</td></tr>
-                      <tr><td>&lt;mark&gt;</td><td>Defines marked/highlighted text</td></tr>
-                      <tr><td>&lt;meta&gt;</td><td>Defines metadata about an HTML document</td></tr>
-                      <tr><td>&lt;meter&gt;</td><td>Defines a scalar measurement within a known range (a gauge)</td></tr>
-                      <tr><td>&lt;nav&gt;</td><td>Defines navigation links</td></tr>
-                      <tr><td>&lt;noframes&gt;</td><td>Not supported in HTML5. Defines an alternate content for users that do not support frames</td></tr>
-                      <tr><td>&lt;noscript&gt;</td><td>Defines an alternate content for users that do not support client-side scripts</td></tr>
-                      <tr><td>&lt;object&gt;</td><td>Defines an embedded object</td></tr>
-                      <tr><td>&lt;ol&gt;</td><td>Defines an ordered list</td></tr>
-                      <tr><td>&lt;optgroup&gt;</td><td>Defines a group of related options in a drop-down list</td></tr>
-                      <tr><td>&lt;option&gt;</td><td>Defines an option in a drop-down list</td></tr>
-                      <tr><td>&lt;output&gt;</td><td>Defines the result of a calculation</td></tr>
-                      <tr><td>&lt;p&gt;</td><td>Defines a paragraph</td></tr>
-                      <tr><td>&lt;param&gt;</td><td>Defines a parameter for an object</td></tr>
-                      <tr><td>&lt;picture&gt;</td><td>Defines a container for multiple image resources</td></tr>
-                      <tr><td>&lt;pre&gt;</td><td>Defines preformatted text</td></tr>
-                      <tr><td>&lt;progress&gt;</td><td>Represents the progress of a task</td></tr>
-                      <tr><td>&lt;q&gt;</td><td>Defines a short quotation</td></tr>
-                      <tr><td>&lt;rp&gt;</td><td>Defines what to show in browsers that do not support ruby annotations</td></tr>
-                      <tr><td>&lt;rt&gt;</td><td>Defines an explanation/pronunciation of characters (for East Asian typography)</td></tr>
-                      <tr><td>&lt;ruby&gt;</td><td>Defines a ruby annotation (for East Asian typography)</td></tr>
-    <tr>
-<td>&lt;s&gt;</td>
-<td>Defines text that is no longer correct</td>
-</tr>
-<tr>
-<td>&lt;samp&gt;</td>
-<td>Defines sample output from a computer program</td>
-</tr>
-<tr>
-<td>&lt;script&gt;</td>
-<td>Defines a client-side script</td>
-</tr>
-<tr>
-<td>&lt;section&gt;</td>
-<td>Defines a section in a document</td>
-</tr>
-<tr>
-<td>&lt;select&gt;</td>
-<td>Defines a drop-down list</td>
-</tr>
-<tr>
-<td>&lt;small&gt;</td>
-<td>Defines smaller text</td>
-</tr>
-<tr>
-<td>&lt;source&gt;</td>
-<td>Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
-</tr>
-<tr>
-<td>&lt;span&gt;</td>
-<td>Defines a section in a document</td>
-</tr>
-<tr>
-<td>&lt;strike&gt;</td>
-<td>Not supported in HTML5. Use &lt;del&gt; or &lt;s&gt; instead. Defines strikethrough text</td>
-</tr>
-<tr>
-<td>&lt;strong&gt;</td>
-<td>Defines important text</td>
-</tr>
-<tr>
-<td>&lt;style&gt;</td>
-<td>Defines style information for a document</td>
-</tr>
-
-<tr>
-<td>&lt;sub&gt;</td>
-<td>Defines subscripted text</td>
-</tr>
-<tr>
-<td>&lt;summary&gt;</td>
-<td>Defines a visible heading for a &lt;details&gt; element</td>
-</tr>
-<tr>
-<td>&lt;sup&gt;</td>
-<td>Defines superscripted text</td>
-</tr>
-  <tr>
-<td>&lt;svg&gt;</td>
-<td>Defines a container for SVG graphics</td>
-  </tr>
-<tr>
-<td>&lt;table&gt;</td>
-<td>Defines a table</td>
-</tr>
-<tr>
-<td>&lt;tbody&gt;</td>
-<td>Groups the body content in a table</td>
-</tr>
-<tr>
-<td>&lt;td&gt;</td>
-<td>Defines a cell in a table</td>
-</tr>
-  <tr>
-<td>&lt;template&gt;</td>
-<td>Defines a template</td>
-  </tr>
-<tr>
-<td>&lt;textarea&gt;</td>
-<td>Defines a multiline input control (text area)</td>
-</tr>
-<tr>
-<td>&lt;tfoot&gt;</td>
-<td>Groups the footer content in a table</td>
-</tr>
-<tr>
-<td>&lt;th&gt;</td>
-<td>Defines a header cell in a table</td>
-</tr>
-<tr>
-<td>&lt;thead&gt;</td>
-<td>Groups the header content in a table</td>
-</tr>
-<tr>
-<td>&lt;time&gt;</td>
-<td>Defines a date/time</td>
-</tr>
-<tr>
-<td>&lt;title&gt;</td>
-<td>Defines a title for the document</td>
-</tr>
-<tr>
-<td>&lt;tr&gt;</td>
-<td>Defines a row in a table</td>
-</tr>
-<tr>
-<td>&lt;track&gt;</td>
-<td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td>
-</tr>
-<tr>
-<td>&lt;tt&gt;</td>
-<td>Not supported in HTML5. Use CSS instead. Defines teletype text</td>
-</tr>
-<tr>
-<td>&lt;u&gt;</td>
-<td>Defines text that should be stylistically different from normal text</td>
-</tr>
-<tr>
-<td>&lt;ul&gt;</td>
-<td>Defines an unordered list</td>
-</tr>
-<tr>
-<td>&lt;var&gt;</td>
-<td>Defines a variable</td>
-</tr>
-<tr>
-<td>&lt;video&gt;</td>
-<td>Defines a video or movie</td>
-
-    </tr>
-    <tr>
-  <td>&lt;wbr&gt;</td>
-  <td>Defines a possible line-break</td>
-    </tr>
-                      
-                    
-                    </table>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--element-->
-            <div class="modal" id="htmlelement">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">HTML Element</h4>
-                  </div>
-                  <div class="modal-body">
-                    
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--atributs-->
-            <div class="modal" id="htmlatributs">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">HTML Atributs</h4>
-                  </div>
-                  <div class="modal-body">
-                    
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!--Symbol-->
-            <div class="modal" id="htmlsymbol">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title">HTML Symbol</h4>
-                  </div>
-                  <div class="modal-body">
-                    
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li><h1>XHTML</h1></li>
-          <li><h1>XPath</h1></li>
-          <li><h1>SCHEMA</h1></li>
-        </ul>
-      </div>
-      <div class="col-sm-6">
-        <ul>
-          <li><h1>XSL</h1></li>
-          <li>
-            <h1>CSS</h1>
-            <p>Cascading StyleSheet</p></li>
-          <li><h1>SVG</h1></li>
-          <li><h1>CANVAS</h1></li>
-          <li><h1>JSON</h1><p>Javascript Object Notation<br>Format for sharing data between server and client</p></li>
-          <li></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-<!--query languages-->
-<div id="Querylanguages" class="jam">
-  <div class="jumbotron text-center">
-    <div class="dropdown">
-      <h1>Query Languages
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
-        <div class="dropdown-menu">
-          
-        </div>
-      </h1>
-    </div>
-  </div>
-  <div class="container" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-6">
-        <ul>
+        <div class="container p-3 my-3 bg-primary text-white">
+          <h1>Query Languages</h1>
+        			<ul>
           <li>
             <h1>SQL</h1>
             <p>Structured Query Language</p>
@@ -614,10 +276,6 @@ https://www.youtube.com/playlist?list=PLHIfW1KZRIfn6kI3NyvzTDm-wdw9EX7D6
             <h1>APACHE</h1>
             <p></p>
           </li>
-        </ul>
-      </div>
-      <div class="col-sm-6">
-        <ul>
           <li>
             <h1>SQL server</h1>
             <p></p>
@@ -643,26 +301,281 @@ https://www.youtube.com/playlist?list=PLHIfW1KZRIfn6kI3NyvzTDm-wdw9EX7D6
             <p></p>
           </li>
         </ul>
+          
+        </div>
       </div>
     </div>
   </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
 </div>
-<!--Framework-->
-<div id="Framework" class="jam">
+<!--html-->
+<div id="html" class="jam">
   <div class="jumbotron text-center">
-    <div class="dropdown">
-      <h1>Famework
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"></button>
-        <div class="dropdown-menu">
-          
-        </div>
-      </h1>
+    <h1>HTML</h1>
+    <p>Hyper Text Markup Language</p>
+  </div>
+  <div class="container mt-3">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs">
+        <li class="nav-item"><a class="nav-link		active" href="#tags">Tags</a></li>
+        <li class="nav-item"><a class="nav-link" href="#element">Element</a></li>
+        <li class="nav-item"><a class="nav-link" href="#atributs">Atributs</a></li>
+  								<li class="nav-item"><a class="nav-link" href="#symbol">Symbol</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="tags" class="container tab-pane	 active">
+        <br>
+        <h4>Basic tags HTML HTML5</h4>
+        <br>
+        <table class="table">
+          <tr><th style="width:25%">Tags</th><th>Description</th></tr>
+          <tr><td>&lt;!-- --&gt;</td><td>Defines a comment</td></tr>
+          <tr><td>&lt;!DOCTYPE&gt;&nbsp;</td><td>Defines the document type</td></tr>
+          <tr><td>&lt;a&gt;</td><td>Defines a hyperlink</td></tr>
+          <tr><td>&lt;abbr&gt;</td><td>Defines an abbreviation or an acronym</td></tr>
+          <tr><td>&lt;acronym&gt;</td><td>Not supported in HTML5. Use &lt;abbr&gt; instead. Defines an acronym</td></tr>
+          <tr><td>&lt;address&gt;</td><td>Defines contact information for the author/owner of a document</td></tr>
+          <tr><td>&lt;applet&gt;</td><td>Not supported in HTML5. Use &lt;embed&gt; or &lt;object&gt; instead. Defines an embedded applet</td></tr>
+          <tr><td>&lt;area&gt;</td><td>Defines an area inside an image-map</td></tr>
+          <tr><td>&lt;article&gt;</td><td>Defines an article</td></tr>
+          <tr><td>&lt;aside&gt;</td><td>Defines content aside from the page content</td></tr>
+          <tr><td>&lt;audio&gt;</td><td>Defines sound content</td></tr>
+          <tr><td>&lt;b&gt;</td><td>Defines bold text</td></tr>
+          <tr><td>&lt;base&gt;</td><td>Specifies the base URL/target for all relative URLs in a document</td></tr>
+          <tr><td>&lt;basefont&gt;</td><td>Not supported in HTML5. Use CSS instead. Specifies a default color, size, and font for all text in a document</td></tr>
+          <tr><td>&lt;bdi&gt;</td><td>Isolates a part of text that might be formatted in a different direction from other text outside it</td></tr>
+          <tr><td>&lt;bdo&gt;</td><td>Overrides the current text direction</td></tr>
+          <tr><td>&lt;big&gt;</td><td>Not supported in HTML5. Use CSS instead. Defines big text</td></tr>
+          <tr><td>&lt;blockquote&gt;</td><td>Defines a section that is quoted from another source</td></tr>
+          <tr><td>&lt;body&gt;</td><td>Defines the document's body</td></tr>
+          <tr><td>&lt;br&gt;</td><td>Defines a single line break</td></tr>
+          <tr><td>&lt;button&gt;</td><td>Defines a clickable button</td></tr>
+          <tr><td>&lt;canvas&gt;</td><td>Used to draw graphics, on the fly, via scripting (usually JavaScript)</td></tr>
+          <tr><td>&lt;caption&gt;</td><td>Defines a table caption</td></tr>
+          <tr><td>&lt;center&gt;</td><td>Not supported in HTML5. Use CSS instead. Defines centered text</td></tr>
+          <tr><td>&lt;cite&gt;</td><td>Defines the title of a work</td></tr>
+          <tr><td>&lt;code&gt;</td><td>Defines a piece of computer code</td></tr>
+          <tr><td>&lt;col&gt;</td><td>Specifies column properties for each column within a &lt;colgroup&gt; element&nbsp;</td></tr>
+          <tr><td>&lt;colgroup&gt;</td><td>Specifies a group of one or more columns in a table for formatting</td></tr>
+          <tr><td>&lt;data&gt;</td><td>Links the given content with a machine-readable translation</td></tr>
+          <tr><td>&lt;datalist&gt;</td><td>Specifies a list of pre-defined options for input controls</td></tr>
+          <tr><td>&lt;dd&gt;</td><td>Defines a description/value of a term in a description list</td></tr>
+          <tr><td>&lt;del&gt;</td><td>Defines text that has been deleted from a document</td></tr>
+          <tr><td>&lt;details&gt;</td><td>Defines additional details that the user can view or hide</td></tr>
+          <tr><td>&lt;dfn&gt;</td><td>Represents the defining instance of a term</td></tr>
+          <tr><td>&lt;dialog&gt;</td><td>Defines a dialog box or window</td></tr>
+          <tr><td>&lt;dir&gt;</td><td>Not supported in HTML5. Use &lt;ul&gt; instead. Defines a directory list</td></tr>
+          <tr><td>&lt;div&gt;</td><td>Defines a section in a document</td></tr>
+          <tr><td>&lt;dl&gt;</td><td>Defines a description list</td></tr>
+          <tr><td>&lt;dt&gt;</td><td>Defines a term/name in a description list</td></tr>
+          <tr><td>&lt;em&gt;</td><td>Defines emphasized text&nbsp;</td></tr>
+          <tr><td>&lt;embed&gt;</td><td>Defines a container for an external (non-HTML) application</td></tr>
+          <tr><td>&lt;fieldset&gt;</td><td>Groups related elements in a form</td></tr>
+          <tr><td>&lt;figcaption&gt;</td><td>Defines a caption for a &lt;figure&gt; element</td></tr>
+          <tr><td>&lt;figure&gt;</td><td>Specifies self-contained content</td></tr>
+          <tr><td>&lt;font&gt;</td><td>Not supported in HTML5. Use CSS instead. Defines font, color, and size for text</td></tr>
+          <tr><td>&lt;footer&gt;</td><td>Defines a footer for a document or section</td></tr>
+          <tr><td>&lt;form&gt;</td><td>Defines an HTML form for user input</td></tr>
+          <tr><td>&lt;frame&gt;</td><td>Not supported in HTML5. Defines a window (a frame) in a frameset</td></tr>
+          <tr><td>&lt;frameset&gt;</td><td>Not supported in HTML5. Defines a set of frames</td></tr>
+          <tr><td>&lt;h1&gt; to &lt;h6&gt;</td><td> Defines HTML headings</td></tr>
+          <tr><td>&lt;head&gt;</td><td>Defines information about the document</td></tr>
+          <tr><td>&lt;header&gt;</td><td>Defines a header for a document or section</td></tr>
+          <tr><td>&lt;hr&gt;</td><td> Defines a thematic change in the content</td></tr>
+          <tr><td>&lt;html&gt;</td><td>Defines the root of an HTML document</td></tr>
+          <tr><td>&lt;i&gt;</td><td>Defines a part of text in an alternate voice or mood</td></tr>
+          <tr><td>&lt;iframe&gt;</td><td>Defines an inline frame</td></tr>
+          <tr><td>&lt;img&gt;</td><td>Defines an image</td></tr>
+          <tr><td>&lt;input&gt;</td><td>Defines an input control</td></tr>
+          <tr><td>&lt;ins&gt;</td><td>Defines a text that has been inserted into a document</td></tr>
+          <tr><td>&lt;kbd&gt;</td><td>Defines keyboard input</td></tr>
+          <tr><td>&lt;label&gt;</td><td>Defines a label&nbsp;for an &lt;input&gt; element</td></tr>
+          <tr><td>&lt;legend&gt;</td><td>Defines a caption for a &lt;fieldset&gt; element</td></tr>
+          <tr><td>&lt;li&gt;</td><td>Defines a list item</td></tr>
+          <tr><td>&lt;link&gt;</td><td>Defines the relationship between a document and an external resource (most used to link to style sheets)</td></tr>
+          <tr><td>&lt;main&gt;</td><td>Specifies the main content of a document</td></tr>
+          <tr><td>&lt;map&gt;</td><td>Defines a client-side image-map</td></tr>
+          <tr><td>&lt;mark&gt;</td><td>Defines marked/highlighted text</td></tr>
+          <tr><td>&lt;meta&gt;</td><td>Defines metadata about an HTML document</td></tr>
+          <tr><td>&lt;meter&gt;</td><td>Defines a scalar measurement within a known range (a gauge)</td></tr>
+          <tr><td>&lt;nav&gt;</td><td>Defines navigation links</td></tr>
+          <tr><td>&lt;noframes&gt;</td><td>Not supported in HTML5. Defines an alternate content for users that do not support frames</td></tr>
+          <tr><td>&lt;noscript&gt;</td><td>Defines an alternate content for users that do not support client-side scripts</td></tr>
+          <tr><td>&lt;object&gt;</td><td>Defines an embedded object</td></tr>
+          <tr><td>&lt;ol&gt;</td><td>Defines an ordered list</td></tr>
+          <tr><td>&lt;optgroup&gt;</td><td>Defines a group of related options in a drop-down list</td></tr>
+          <tr><td>&lt;option&gt;</td><td>Defines an option in a drop-down list</td></tr>
+          <tr><td>&lt;output&gt;</td><td>Defines the result of a calculation</td></tr>
+          <tr><td>&lt;p&gt;</td><td>Defines a paragraph</td></tr>
+          <tr><td>&lt;param&gt;</td><td>Defines a parameter for an object</td></tr>
+          <tr><td>&lt;picture&gt;</td><td>Defines a container for multiple image resources</td></tr>
+          <tr><td>&lt;pre&gt;</td><td>Defines preformatted text</td></tr>
+          <tr><td>&lt;progress&gt;</td><td>Represents the progress of a task</td></tr>
+          <tr><td>&lt;q&gt;</td><td>Defines a short quotation</td></tr>
+          <tr><td>&lt;rp&gt;</td><td>Defines what to show in browsers that do not support ruby annotations</td></tr>
+          <tr><td>&lt;rt&gt;</td><td>Defines an explanation/pronunciation of characters (for East Asian typography)</td></tr>
+          <tr><td>&lt;ruby&gt;</td><td>Defines a ruby annotation (for East Asian typography)</td></tr>
+          <tr><td>&lt;s&gt;</td><td>Defines text that is no longer correct</td></tr>
+          <tr><td>&lt;samp&gt;</td><td>Defines sample output from a computer program</td></tr>
+          <tr><td>&lt;script&gt;</td><td>Defines a client-side script</td></tr>
+          <tr><td>&lt;section&gt;</td><td>Defines a section in a document</td></tr>
+          <tr><td>&lt;select&gt;</td><td>Defines a drop-down list</td></tr>
+          <tr><td>&lt;small&gt;</td><td>Defines smaller text</td></tr>
+          <tr><td>&lt;source&gt;</td><td>Defines multiple media resources for media elements (&lt;video&gt; and &lt;audio&gt;)</td></tr>
+          <tr><td>&lt;span&gt;</td><td>Defines a section in a document</td></tr>
+          <tr><td>&lt;strike&gt;</td><td>Not supported in HTML5. Use &lt;del&gt; or &lt;s&gt; instead. Defines strikethrough text</td></tr>
+          <tr><td>&lt;strong&gt;</td><td>Defines important text</td></tr>
+          <tr><td>&lt;style&gt;</td><td>Defines style information for a document</td></tr>
+          <tr><td>&lt;sub&gt;</td><td>Defines subscripted text</td></tr>
+          <tr><td>&lt;summary&gt;</td><td>Defines a visible heading for a &lt;details&gt; element</td></tr>
+          <tr><td>&lt;sup&gt;</td><td>Defines superscripted text</td></tr>
+          <tr><td>&lt;svg&gt;</td><td>Defines a container for SVG graphics</td></tr>
+          <tr><td>&lt;table&gt;</td><td>Defines a table</td></tr>
+          <tr><td>&lt;tbody&gt;</td><td>Groups the body content in a table</td></tr>
+          <tr><td>&lt;td&gt;</td><td>Defines a cell in a table</td></tr>
+          <tr><td>&lt;template&gt;</td><td>Defines a template</td></tr>
+          <tr><td>&lt;textarea&gt;</td><td>Defines a multiline input control (text area)</td></tr
+          <tr><td>&lt;tfoot&gt;</td><td>Groups the footer content in a table</td></tr>
+          <tr><td>&lt;th&gt;</td><td>Defines a header cell in a table</td></tr>
+          <tr><td>&lt;thead&gt;</td><td>Groups the header content in a table</td></tr>
+          <tr><td>&lt;time&gt;</td><td>Defines a date/time</td></tr>
+          <tr><td>&lt;title&gt;</td><td>Defines a title for the document</td></tr>
+          <tr><td>&lt;tr&gt;</td><td>Defines a row in a table</td>
+</tr>
+          <tr><td>&lt;track&gt;</td><td>Defines text tracks for media elements (&lt;video&gt; and &lt;audio&gt;)</td></tr>
+          <tr><td>&lt;tt&gt;</td><td>Not supported in HTML5. Use CSS instead. Defines teletype text</td></tr>
+          <tr><td>&lt;u&gt;</td><td>Defines text that should be stylistically different from normal text</td></tr>
+          <tr><td>&lt;ul&gt;</td><td>Defines an unordered list</td></tr>
+          <tr><td>&lt;var&gt;</td><td>Defines a variable</td></tr>
+          <tr><td>&lt;video&gt;</td><td>Defines a video or movie</td></tr>
+          <tr><td>&lt;wbr&gt;</td><td>Defines a possible line-break</td></tr>
+        </table>
+      </div>
+      <div id="element" class="container tab-pane fade">
+        <br>
+        <h3>Element</h3>
+      </div>
+      <div id="atributs" class="container tab-pane		fade">
+        <br>
+        <h3>Atributs</h3>
+      </div>
+      <div id="symbol" class="container tab-pane		fade">
+        <br>
+        <h3>Symbol</h3>
+      </div>
+   		</div>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--CSS-->
+<div id="css" class="jam">
+  <div class="jumbotron text-center">
+    <h1>CSS</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--javascript-->
+<div id="javascript" class="jam">
+  <div class="jumbotron text-center">
+    <h1>JavaScript</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--java-->
+<div id="java" class="jam">
+  <div class="jumbotron text-center">
+    <h1>JAVA</h1>
+    <div>
+      <br>JDK
+      <br>JRE
+      <br>JVM
+      <br>Java FX
+      <br>Spring Struts Hibernate
     </div>
   </div>
-  <div class="container" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-6">
-        <ul>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--python-->
+<div id="python" class="jam">
+  <div class="jumbotron text-center">
+    <h1>PYTHON</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--php-->
+<div id="php" class="jam">
+  <div class="jumbotron text-center">
+    <h1>PHP</h1>
+    <p>PHP:Hypertext Preprocessor</p>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--c#-->
+<div id="c#" class="jam">
+  <div class="jumbotron text-center">
+    <h1>C#</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>  
+<!--c-->
+<div id="c" class="jam">
+  <div class="jumbotron text-center">
+    <h1>C</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>  
+<!--C++-->
+<div id="cpp" class="jam">
+  <div class="jumbotron text-center">
+    <h1>C++</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>  
+<!--kotlin-->
+<div id="kotlin" class="jam">
+  <div class="jumbotron text-center">
+    <h1>KOTLIN</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--visual basic-->
+<div id="vb" class="jam">
+  <div class="jumbotron text-center">
+    <h1>Visual Basic</h1>
+  </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>
+<!--framework-->
+<div id="framework" class="jam">
+  <div class="jumbotron text-center">
+    <h1>FRAMEWORK</h1>
+  </div>
+  								<ul>
           <li>
             <h1>JavaScript</h1>
             <p>Bootsrap.js<br>jQuery<br>angular.js<br>react.js<br>node.js</p>
@@ -687,84 +600,45 @@ https://www.youtube.com/playlist?list=PLHIfW1KZRIfn6kI3NyvzTDm-wdw9EX7D6
             <h1>Swift</h1>
             <p>Cocoa<<br>Cloudkit</p>
           </li>
-        </ul>
-      </div>
-      <div class="col-sm-6">
-        <ul>
           <li>
             <h1>Golang</h1>
             <p>Rebel<br>Beego</p>
           </li>
-          <!--Definitions-->
-          <li>
-            <h1>Definitions</h1>
-            <p>
-              <ul>
-                <li><h3> :<small> </small></h3></li>
-                <li><h3>VPN :<small> Virtual Private Network</small></h3></li>
-                <li><h3>MVC :<small> Model View Controller</small></h3></li>
-                <li><h3>CMS :<small> Content Management System</small></h3></li>
-                <li><h3>SEO :<small> Search Engine Optimization</small></h3></li>
-                <li><h3>FTP:<small> File Transfer Protocol</small></h3></li>
-                <li><h3>CDN :<small> Content Delivery Network</small></h3></li>
-                <li><h3><a data-toggle="tooltip" title="Sub Version">SVN</a></h3></li>
-                <li><h3>DTD :<small></small></h3></li>
-                <li><h3>Zamarin Forms :<small></small></h3></li>
-              </ul>
-            </p>
-          </li>
-          <li>
-            <h1>API</h1>
-            <p>Application Programming Interface</p>
-          </li>
-          <li>
-            <h1></h1>
-            <p></p>
-          </li>
-          <li>
-            <h1></h1>
-            <p></p>
-          </li>
-          <li>
-            <h1></h1>
-            <p></p>
-          </li>
         </ul>
-      </div>
-    </div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
   </div>
 </div>
-<!--Exemple-->
-<div id="exemple" class="jam">
-Exemple	
-  <p class="text-primary">This text is important.</p>
-  <p class="text-success">This text indicates success.</p>
-  <p class="text-info">This text represents some information.</p>
-  <p class="text-warning">This text represents a warning.</p>
-  <p class="text-danger">This text represents danger.</p>
-  <p class="bg-primary text-white">This text is important.</p>
-  <p class="bg-success text-white">This text indicates success.</p>
-  <p class="bg-info text-white">This text represents some information.</p>
-  <p class="bg-warning text-white">This text represents a warning.</p>
-  <p class="bg-danger text-white">This text represents danger.</p>
-  <p class="bg-secondary text-white">Secondary background color.</p>
-  <p class="bg-dark text-white">Dark grey background color.</p>
-<div class="container">
-    <h2>Simple Collapsible</h2>
-    <p>Click on the button to toggle between showing and hiding content.</p>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo">
-      Simple collapsible
-    </button>
-    <div id="demo" class="collapse">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-    </div>
+<!--definition-->
+<div id="definition" class="jam">
+  <div class="jumbotron text-center">
+    <h1>Définition & Tools</h1>
+    <ul>
+      <li><h3> :<small> </small></h3></li>
+      <li><h3>VPN :<small> Virtual Private Network</small></h3></li>
+      <li><h3>MVC :<small> Model View Controller</small></h3></li>
+      <li><h3>CMS :<small> Content Management System</small></h3></li>
+      <li><h3>SEO :<small> Search Engine Optimization</small></h3></li>
+      <li><h3>FTP:<small> File Transfer Protocol</small></h3></li>
+      <li><h3>CDN :<small> Content Delivery Network</small></h3></li>
+      <li><h3><a data-toggle="tooltip" title="Sub Version">SVN</a></h3></li>
+      <li><h3>DTD :<small></small></h3></li>
+      <li><h3>Zamarin Forms :<small></small></h3></li>
+      <li><h1>API</h1><p>Application Programming Interface</p></li>
+    </ul>
   </div>
-</div>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <code>All Rights Reserved, &copy 2020</code><br><kbd>JAMAL ELKHDADI</kbd>
+  </div>
+</div>  
+ 
       
-<!--Tooltip-->
+<!--tap panes html-->
 <script>
 $(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
 });
 </script>
 <!--pagination home page-->
@@ -775,14 +649,14 @@ function openJam(evt, jamName) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  var activebtn = document.getElementsByClassName("btn");
+  var activebtn = document.getElementsByClassName("btnlink");
   for (i = 0; i < x.length; i++) {
     activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
   }
   document.getElementById(jamName).style.display = "block";
   evt.currentTarget.className += " w3-dark-grey";
 }
-var mybtn = document.getElementsByClassName("btn")[0];
+var mybtn = document.getElementsByClassName("btnlink")[0];
 mybtn.click();
 </script>
 </body>
