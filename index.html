@@ -2,11 +2,9 @@
 <html lang="en">
 <head>
   <title>PDQFT</title>
-  <meta charset="UTF-8">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML,CSS,JAVASCRIPT,jQuery,Bootsrap,angular.js,PHP,c#">
-  <meta name="author" content="Jamal Elkhdadi">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta outhor="JAMAL ELKHDADI">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -37,6 +35,13 @@ $(".table3").toggle(1000);
 $(document).ready(function(){
 $(".btn4").click(function(){
 $(".table4").toggle(1000);
+});
+});
+</script>
+<script>
+$(document).ready(function(){
+$(".btn5").click(function(){
+$(".table5").toggle(1000);
 });
 });
 </script>  
@@ -124,7 +129,7 @@ $(".table4").toggle(1000);
           </div>
         </div>
         <div class="container p-3 my-3 border">
-          <button class="btn btn-siccess btn1">Définition tools</button>
+          <button class="btn btn-success btn1">Définition tools</button>
           <table class="table table1" style="display:none">
             <th>Touls</th><th>Définition</th>
             <tr><td>VPN</td><td>Virtual Private Network</td></tr>
@@ -141,8 +146,9 @@ $(".table4").toggle(1000);
           </table>
         </div>
         <div class="container p-3 my-3 border">
-          <h3>Professional websites</h3>
-          <ul class="nav nav-pills flex-column">
+          <button class="btn btn-success btn5">Professional websites</button>
+          <ul class="nav nav-pills flex-column table5" style="display:none">
+            <br>
             <li class="nav-item"><a class="nav-link active" href="https://github.com/jamalelkhdadi">Github</a></li>
             <li class="nav-item"><a class="nav-link" href="https://gitlab.com/jamalelkhdadi1/web">Gitlab</a></li>
             <li class="nav-item"><a class="nav-link" href="https://bitbucket.org/dashboard/projects">Bitbucket</a></li>
@@ -188,7 +194,7 @@ $(".table4").toggle(1000);
         </div>
       </div>
       <div class="col-sm-8">
-        <div class="container p-3 my-3 bg-primary text-white">
+        <div class="container p-3 my-3 bg-info text-white">
           <button class="btn btn-success btn2">Programming Languages</button>
           <table class="table table2" style="display:none">
             <thead>
@@ -261,7 +267,7 @@ $(".table4").toggle(1000);
             </tbody>
           </table>
         </div>
-        <div class="container p-3 my-3 bg-primary text-white">
+        <div class="container p-3 my-3 bg-info text-white">
           <button class="btn btn-success btn3">Descriptive languages</button>
           <table class="table table3" style="display:none">
             <thead>
@@ -327,7 +333,7 @@ $(".table4").toggle(1000);
             </tbody>
           </table>
         </div>
-        <div class="container p-3 my-3 bg-primary text-white">
+        <div class="container p-3 my-3 bg-info text-white">
           <button class="btn btn-success btn4">Query Languages</button>
         			<table class="table table4" style="display:none">
             <thead>
