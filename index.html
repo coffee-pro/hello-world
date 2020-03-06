@@ -46,6 +46,17 @@ $(".table5").toggle(1000);
 });
 </script>
 <script>
+$(document).ready(function(){
+$(".btn6").click(function(){
+$(".table6").animate({
+"left":"120px",
+"opacity":"1",
+"width":"60px",
+});
+});
+});
+</script>  
+<script>
    function clock() 
    {
     var time = new Date().toLocaleTimeString();
@@ -56,7 +67,7 @@ $(".table5").toggle(1000);
 <style>
 .clock {
 					font-size:50px;
-					color:yellow;
+					color:#ffffff;
 }
 
 #myBtn {
@@ -68,11 +79,11 @@ $(".table5").toggle(1000);
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #777777;
   color: white;
   cursor: pointer;
   padding: 15px;
-  border-radius: 4px;
+  border-radius: 30px;
 }
 
 
@@ -81,7 +92,7 @@ $(".table5").toggle(1000);
 <body onload="clock()" id="hom">
 <!--navbar-->
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-  <a class="navbar-brand" href="index.html"><img src="logo.png" width="60px" height="40px"></a>
+  <a class="navbar-brand" href="index.html"><img src="logo.png" width="55px" height="35px"></a>
   <div class="spinner-border text-primary"><center><h5>P</h5></center></div>
   <div class="spinner-border text-success"><center><h5>D</h5></center></div>
   <div class="spinner-border text-info"><center><h5>Q</h5></center></div>
@@ -115,136 +126,67 @@ $(".table5").toggle(1000);
       </li>
       <li class="nav-item"><a class="nav-link btnlink" onclick="openJam(event, 'framework')">Framework</a></li>
       <li class="nav-item"><a class="nav-link btnlink" onclick="openJam(event,'video')">Video</a></li>
+      <li><div class="clock" id="myClock"></div></li>
     </ul>
-    <div class="clock" id="myClock"></div>  
   </div>
 </nav>
 <!--home page-->
 <div id="home" class="jam">
   <div class="jumbotron text-center">
-    <div id="demo2" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-        <li data-target="#demo2" data-slide-to="0" class="active"></li>
-        <li data-target="#demo2" data-slide-to="1"></li>
-        <li data-target="#demo2" data-slide-to="2"></li>
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active"><h4>Programming langages, Descriptive langages, Query langages, Framework</h4></div>
-        <div class="carousel-item"><h4>Disktop Application, Mobile Application, Web Application, Game</h4></div>
-        <div class="carousel-item"><h4>Front-end, Developer, back-end, developers</h4></div>
-      </div>
-      <a class="carousel-control-prev" href="#demo2" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-      <a class="carousel-control-next" href="#demo2" data-slide="next"><span class="carousel-control-next-icon"></span></a>
-    </div>
-  </div>
-  <div class="container-fluid" style="margin-top:30px">
-    <div class="row">
-      <div class="col-sm-4">
-        <br>
-        <div class="card">
-          <div class="card-body">
-            <!--sledeShow-->
-            <div id="demo" class="carousel slide" data-ride="carousel">
-              <ul class="carousel-indicators">
-                <li data-target="#demo" data-slide-to="0" class="active"></li>
-                <li data-target="#demo" data-slide-to="1"></li>
-                <li data-target="#demo" data-slide-to="2"></li>
-              </ul>
-              <div class="carousel-inner">
-                <div class="carousel-item active"><img src="img/web-technology-png-2.png" width="100%" height="300px" alt="Los Angeles"></div>
-                <div class="carousel-item"><img src="img/unnamed.png" width="100%" height="300px" alt="Chicago"></div>
-                <div class="carousel-item"><img src="img/tools-1.png" width="100%" height="300px" alt="New York"></div>
-              </div>
-              <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
-              <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
-            </div>
-          </div>
-        </div>
-        <div class="container p-3 my-3 border">
-          <button class="btn btn-success btn1">Définition tools</button>
-          <table class="table table1" style="display:none">
-            <th>Touls</th><th>Définition</th>
-            <tr><td>VPN</td><td>Virtual Private Network</td></tr>
-            <tr><td>MVC</td><td>Model View Controller</td></tr>
-            <tr><td>CMS</td><td>Content Management System</td></tr>
-            <tr><td>SEO</td><td>Search Engine Optimization</td></tr>
-            <tr><td>FTP</td><td>File Transfer Protocol</td></tr>
-            <tr><td>CDN</td><td>Content Delivery Network</td></tr>
-            <tr><td>SVN</td><td>Sub version</td></tr>
-            <tr><td>DTD</td><td>Document type définition</td></tr>
-            <tr><td>SOC</td><td>Separation Of Conserns<small> فصل المهام </small></td></tr>
-            <tr><td>API</td><td>Application Programming Interface</td></tr>
-            <tr><td>DOM</td><td>Document object model</td></tr>
-          </table>
-        </div>
-        <div class="container p-3 my-3 border">
-          <button class="btn btn-success btn5">Professional websites</button>
-          <ul class="nav nav-pills flex-column table5" style="display:none">
-            <br>
-            <li class="nav-item"><a class="nav-link active" href="https://github.com/jamalelkhdadi">Github</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://gitlab.com/jamalelkhdadi1/web">Gitlab</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://bitbucket.org/dashboard/projects">Bitbucket</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.behance.net/jamalelkhdadi1">Behance</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://codepen.io/jamalelkhdadi">Codepen</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://stackoverflow.com/users/12586453/jamal-elkhdadi">Stackoverflow</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://classroom.udacity.com/me">Udacity</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://dev.to/jamalelkhdadi/buton-181b">Dev.to</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.jsdelivr.com/">jsdelivr</a></li>
-            <li class="nav-item"><a class="nav-link" href="http://myjson.com">myjson</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://atom.io/">atom</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://onsen.io/v2/api/angular1/ons-action-sheet.html">onsen</a></li>
-            <li class="nav-item"><a class="nav-link" href="http://www.javadecompilers.com/">javadecompilers</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://next.plnkr.co/edit/?p=preview&preview">next.plnkr</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://convertio.co/png-svg/">convertio</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.flaticon.com/downloads-limit">flaticon</a></li>
-            <li class="nav-item"><a class="nav-link" href="https://www.online-convert.com/">online-convert</a></li>
-            <li class="nav-item"><a class="nav-link" href=""></a></li>
-            <li class="nav-item"><a class="nav-link" href=""></a></li>
-          
-          
-          
-          </ul>
-        </div>
-        <!--scools-->
-        <div class="btn-group">
-          <a href="https://www.w3schools.com/">
-            <button type="button" class="btn btn-info">w3schools</button>
-          </a>
-          <a href="https://www.tutorialspoint.com/index.htm">
-            <button type="button" class="btn btn-info">tutorialspoint</button>
-          </a>
-          <a href="https://www.udemy.com/">
-            <button type="button" class="btn btn-info">udemy</button>
-          </a>
-        </div>
-        <!--about me-->
-        <div class="container mt-3">
-          <div class="media border p-3">
-            <img src="jamal.jpg" alt="JAMAL ELKHDADI" class="mr-3 mt-3 rounded-circle" style="width:65px;">
-            <div class="media-body">
-              <h5>JAMAL ELKHDADI</h5>
-              <small><br>
-                <p>10/04/1988</p>
-                <p>Team leader</p>
-                <p>Ad industries</p>
-                <p>10/04/1988</p>
-              </small>
-            </div>
-          </div>
-        </div>
-        <!--About Template-->
-        <div class="container p-3 my-3 bg-dark text-white">
-          <h2>About Template</h2>
+    <div class="container-fluid" style="margin-top:30px">
+      <div class="row">
+        <div class="col-md-8">
+          <H1 class="title">PQDFT</h1>
+          <code>About Template</code>
           <p>Being an Administrative Assistant is something that I take pride in.
-            <br>Having an opportunity to work from home and provide these services to persons internationally is an ideal situation.
-            <br>I am positive that tasks would be carried out successfully and efficiently on a regular basis.
+            Having an opportunity to work from home and provide these services to persons internationally is an ideal situation.
+            I am positive that tasks would be carried out successfully and efficiently on a regular basis.
           </p>
         </div>
+        <div class="col-md-4">
+           <div class="card">
+             <div class="card-body">
+               <!--sledeShow-->
+               <div id="demo" class="carousel slide" data-ride="carousel">
+                 <ul class="carousel-indicators">
+                   <li data-target="#demo" data-slide-to="0" class="active"></li>
+                   <li data-target="#demo" data-slide-to="1"></li>
+                   <li data-target="#demo" data-slide-to="2"></li>
+                 </ul>
+                 <div class="carousel-inner">
+                   <div class="carousel-item active"><img src="img/web-technology-png-2.png" width="100%" height="300px" alt="Los Angeles"></div>
+                   <div class="carousel-item"><img src="img/unnamed.png" width="100%" height="300px" alt="Chicago"></div>
+                   <div class="carousel-item"><img src="img/tools-1.png" width="100%" height="300px" alt="New York"></div>
+                 </div>
+                 <a class="carousel-control-prev" href="#demo" data-slide="prev"><span class="carousel-control-prev-icon"></span></a>
+                 <a class="carousel-control-next" href="#demo" data-slide="next"><span class="carousel-control-next-icon"></span></a>
+               </div>
+             </div>
+          </div>
+        </div>
+        <div class="container p-3 my-3 border bg-success">
+          <!--search-->
+          <h4>Search here</h4>
+          <div class="well">
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-primary" type="button">
+                  <img src="loupe.svg" width="20px" height="20px" alt="search">
+                </button>
+              </span>
+            </div>
+          </div>
+        </div>        
       </div>
-      <div class="col-sm-8">
+    </div>
+  </div>
+  <div class="container-fluid" style="margin-top:0px">
+    <div class="row">
+      <div class="col-md-8">
         <div class="container p-3 my-3 bg-info text-white">
-          <button class="btn btn-success btn2">Programming Languages</button>
-          <table class="table table2" style="display:none">
+          <h4>Programming Languages</h4>
+          <table class="table">
             <thead>
               <tr>
                 <th>Langages</th>
@@ -270,7 +212,7 @@ $(".table5").toggle(1000);
               </tr>
               <tr>
                 <td>C#</td>
-                <td>asp.net</td>
+                <td></td>
               </tr>
               <tr>
                 <td>C</td>
@@ -315,9 +257,70 @@ $(".table5").toggle(1000);
             </tbody>
           </table>
         </div>
+        <!--tools-->
         <div class="container p-3 my-3 bg-info text-white">
-          <button class="btn btn-success btn3">Descriptive languages</button>
-          <table class="table table3" style="display:none">
+          <h4>Définition tools</h4>
+          <table class="table">
+            <th>Touls</th><th>Définition</th>
+            <tr><td>VPN</td><td>Virtual Private Network</td></tr>
+            <tr><td>MVC</td><td>Model View Controller</td></tr>
+            <tr><td>CMS</td><td>Content Management System</td></tr>
+            <tr><td>SEO</td><td>Search Engine Optimization</td></tr>
+            <tr><td>FTP</td><td>File Transfer Protocol</td></tr>
+            <tr><td>CDN</td><td>Content Delivery Network</td></tr>
+            <tr><td>SVN</td><td>Sub version</td></tr>
+            <tr><td>DTD</td><td>Document type définition</td></tr>
+            <tr><td>SOC</td><td>Separation Of Conserns<small> فصل المهام </small></td></tr>
+            <tr><td>API</td><td>Application Programming Interface</td></tr>
+            <tr><td>DOM</td><td>Document object model</td></tr>
+          </table>
+        </div>
+        <!--Tools & technology-->
+        <div class="container p-3 my-3 bg-info text-white">
+          <h4>Tools & technology</h4>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Tools</th>
+                <th>Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Asp.net</td>
+                <td>Active Server Pages<small>ASP is a development framework for building web pages.</td>
+              </tr>
+              <tr>
+                <td>SVG</td>
+                <td>Scalable Vector Graphics</td>
+              </tr>
+              <tr>
+                <td>Canvas</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>Cascading StyleSheet</td>
+              </tr>
+              <tr>
+                <td>JSON</td>
+                <td>Javascript Object Notation<br>Format for sharing data between server and client</td>
+              </tr>
+              <tr>
+                <td>AJAX</td>
+                <td>Asynchronous Javascript and xml</td>
+              </tr>
+              <tr>
+                <td>SQL server</td>
+                <td></td>
+              </tr>
+                
+            </tbody>
+          </table>
+        </div>
+        <div class="container p-3 my-3 bg-info text-white">
+          <h4>Descriptive languages</h4>
+          <table class="table">
             <thead>
               <tr>
                 <th>Langages</th>
@@ -325,10 +328,6 @@ $(".table5").toggle(1000);
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>CSS</td>
-                <td>Cascading StyleSheet</td>
-              </tr>
               <tr>
                 <td>SGML</td>
                 <td>Standard Generalized Markup Language</td>
@@ -358,23 +357,6 @@ $(".table5").toggle(1000);
                 <td>An XML Schema describes the structure of an XML document.<br>The XML Schema language is also referred to as XML Schema Definition (XSD).</td>
               </tr>
               <tr>
-                <td>CANVAS</td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>SVG</td>
-                <td>Scalable Vector Graphics</td>
-              </tr>
-              <tr>
-                <td>JSON</td>
-                <td>Javascript Object Notation<br>Format for sharing data between server and client</td>
-              </tr>
-              <tr>
-                <td>AJAX</td>
-                <td>Asynchronous Javascript and xml</td>
-              </tr>
-              <tr>
-              <tr>
                 <td>XAML</td>
                 <td>Extensible Application Markup Language</td>
               </tr>
@@ -382,8 +364,8 @@ $(".table5").toggle(1000);
           </table>
         </div>
         <div class="container p-3 my-3 bg-info text-white">
-          <button class="btn btn-success btn4">Query Languages</button>
-        			<table class="table table4" style="display:none">
+          <h4>Query Languages</h4>
+        			<table class="table">
             <thead>
               <tr>
                 <th>Langages</th>
@@ -423,10 +405,7 @@ $(".table5").toggle(1000);
                 <td>SQL lite</td>
                 <td></td>
               </tr>
-              <tr>
-                <td>SQL server</td>
-                <td></td>
-              </tr>
+
               <tr>
                 <td>ORACLE</td>
                 <td>Database System</td>
@@ -445,6 +424,75 @@ $(".table5").toggle(1000);
               </tr>
         			  </tbody>
           </table>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="container p-3 my-3 border">
+          <h4>Professional websites</h4>
+          <ul class="nav nav-pills flex-column">
+            <br>
+            <li class="nav-item"><a class="nav-link active" href="https://github.com/jamalelkhdadi">Github</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://gitlab.com/jamalelkhdadi1/web">Gitlab</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://bitbucket.org/dashboard/projects">Bitbucket</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.behance.net/jamalelkhdadi1">Behance</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://codepen.io/jamalelkhdadi">Codepen</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://stackoverflow.com/users/12586453/jamal-elkhdadi">Stackoverflow</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://classroom.udacity.com/me">Udacity</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://dev.to/jamalelkhdadi/buton-181b">Dev.to</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.jsdelivr.com/">jsdelivr</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://myjson.com">myjson</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://atom.io/">atom</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://onsen.io/v2/api/angular1/ons-action-sheet.html">onsen</a></li>
+            <li class="nav-item"><a class="nav-link" href="http://www.javadecompilers.com/">javadecompilers</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://next.plnkr.co/edit/?p=preview&preview">next.plnkr</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://convertio.co/png-svg/">convertio</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.flaticon.com/downloads-limit">flaticon</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://www.online-convert.com/">online-convert</a></li>
+            <li class="nav-item"><a class="nav-link" href=""></a></li>
+            <li class="nav-item"><a class="nav-link" href=""></a></li>
+          </ul>
+        </div>
+        <!--Education-->
+        <div class="container p-3 my-3 border">
+          <h4>Education</h4>
+          <table>
+            <tr>
+              <td>
+                <a href="https://www.w3schools.com/">
+                  <button type="button" class="btn btn-info">w3schools</button>
+                </a>
+              </td>
+              <td>
+                <a href="https://www.tutorialspoint.com/index.htm">
+                  <button type="button" class="btn btn-info">tutorialspoint</button>
+                </a>
+              </td>
+              <td>
+                <a href="https://www.udemy.com/">
+                  <button type="button" class="btn btn-info">udemy</button>
+                </a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <!--About-->
+        <div class="container p-3 my-3 bg-dark text-white">
+          <!--about me-->
+          <div class="media border p-3">
+            <img src="jamal.jpg" alt="JAMAL ELKHDADI" class="mr-3 mt-3 rounded-circle" style="width:65px;">
+            <div class="media-body">
+              <h5>JAMAL ELKHDADI</h5>
+              <p>Ne le :<small> 10/04/1988</small></p>
+              <p>à :<small> Taza</small></p>
+              <p><small>Tanger-morocco</small></p>
+            </div>
+          </div>
+          <br>
+          <h2>About</h2>
+          <p>Being an Administrative Assistant is something that I take pride in.
+            <br>Having an opportunity to work from home and provide these services to persons internationally is an ideal situation.
+            <br>I am positive that tasks would be carried out successfully and efficiently on a regular basis.
+          </p>
         </div>
       </div>
     </div>
@@ -937,7 +985,6 @@ function scrollFunction() {
     mybutton.style.display = "none";
   }
 }
-
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
   document.body.scrollTop = 0;
